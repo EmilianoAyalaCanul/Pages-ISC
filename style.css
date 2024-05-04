@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(55,55,55);
+    background: linear-gradient(90deg, rgba(55,55,55,1) 0%, rgba(38,38,38,1) 53%, rgba(23,23,23,1) 100%);
+}
+
+.container-gb{
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.c5{
+    width: 100%;
+    height: 5%;
+    /*background-color: rgb(254, 227, 15);*/
+    display: flex;
+}
+
+.c20{
+    width: 100%;
+    height: 20%;
+    /*background: rgb(171, 137, 0);*/
+}
+
+.c50{
+    width: 100%;
+    height: 50%;
+    /*background: rgb(255, 142, 136);*/
+    display: flex;
+    
+}
+
+.encabezado{
+    text-align: center;
+    padding-top: 5dvh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    color: rgb(177, 177, 177);
+}
+
+.c50 .espacio_poster{
+    width: 10%;
+    height: 100%;
+    /*background: wheat;*/
+}
+
+.c50 .poster{
+    width: 20%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+
+.poster .imagen{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+/*imagenes*/
+.im1, .pim1{
+    background-image: url(img/Juan_Poster.jpeg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.im1:hover{
+    cursor: pointer;
+    background-image: url(img/Juan_Post.png);
+    border-radius: 15px;
+}
+
+.im2, .pim2{
+    background-image: url(img/Emiliano_Poster.png);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.im2:hover{
+    background-image: url(img/Emiliano_Post.png);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.im3, .pim3{
+    background-image: url(img/Oziel_Poster.jpeg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.im3:hover{
+    background-image: url(img/Oziel_Post.png);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/*nombres*/
+
+.sp{
+    width: 10%;
+    height: 100%;
+}
+.np{
+    width: 20%;
+    height: 100%;
+}
+
+.np p {
+    color: rgb(177, 177, 177);
+    text-align: center;
+    padding-top: 1dvh;
+    font-size: 25px;
+}
+
+.c20 .ver {
+    color: rgb(177, 177, 177);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 8dvh;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Responsive*/
+@media (Max-width: 1650px) {
+    .c50 .espacio_poster{
+        width: 10%;
+    }
+
+    .c50 .poster{
+        width: 20%;
+        height: 100%;
+    }
+
+    .sp{
+        width: 10%;
+    }
+    .np{
+        width: 20%;
+    }
+    .c20 .ver {
+        font-size: 16px;       
+    }
+}
+
+@media (Max-width: 1400px) {
+    .c50 .espacio_poster{
+        width: 5%;
+    }
+
+    .c50 .poster{
+        width: 26.6%;
+        height: 100%;
+    }
+
+    .sp{
+        width: 5%;
+    }
+    .np{
+        width: 27.5%;
+    }
+    .c20 .ver {
+        font-size: 15px;       
+    }
+}
+
+@media (Max-width: 1250px) {
+    .c50 .espacio_poster{
+        width: 2.5%;
+    }
+
+    .c50 .poster{
+        width: 30%;
+        height: 95%;
+    }
+
+    .sp{
+        width: 2.5%;
+    }
+    .np{
+        width: 30%;
+    }
+    .c20 .ver {
+        font-size: 15px;       
+    }
+}
+
+@media (Max-width: 1010px) {
+    .c50 .espacio_poster{
+        width: 2.5%;
+    }
+
+    .c50 .poster{
+        width: 30%;
+        height: 80%;
+    }
+
+    .sp{
+        width: 2.5%;
+    }
+    .np{
+        width: 30%;
+    }
+    .np p {
+        font-size: 20px;
+    }
+
+}
+
+@media (Max-width: 810px) {
+    .c50 .espacio_poster{
+        width: 2.5%;
+    }
+
+    .c50 .poster{
+        width: 30%;
+        height: 70%;
+    }
+
+    .sp{
+        width: 2.5%;
+    }
+    .np{
+        width: 30%;
+    }
+    .np p {
+        font-size: 18px;
+    }
+    .c20 .ver {
+        font-size: 12px;       
+    }
+}
+
+@media (Max-width: 710px) {
+    .c50 .espacio_poster{
+        width: 2.5%;
+    }
+
+    .c50 .poster{
+        width: 30%;
+        height: 50%;
+    }
+
+    .sp{
+        width: 2.5%;
+    }
+    .np{
+        width: 30%;
+    }
+    .np p {
+        font-size: 16px;
+    }
+}
+
+@media (Max-width: 610px) {
+    .c50 .espacio_poster{
+        width: 2.5%;
+    }
+
+    .c50 .poster{
+        width: 30%;
+        height: 45%;
+    }
+
+    .np p {
+        font-size: 13px;
+    }
+
+    .c20 .ver {
+        font-size: 10px;       
+    }
+}
+
+@media (Max-width: 510px) {
+    .c50 .espacio_poster{
+        width: 2.5%;
+    }
+    
+    .c50 .poster{
+        width: 30%;
+        height: 35%;
+    }
+
+    .encabezado{
+        padding-top: 4dvh;
+        font-size: 80px;
+    }
+
+    .np p {
+        font-size: 12px;
+    }
+    .c20 .ver {
+        font-size: 8px;       
+    }
+}
+
+@media (Max-width: 400px) {
+    .c50 .espacio_poster{
+        width: 2.5%;
+    }
+    
+    .c50 .poster{
+        width: 30%;
+        height: 20%;
+    }
+
+    .encabezado{
+        padding-top: 4dvh;
+        font-size: 40px;
+    }
+    .np p {
+        font-size: 6px;
+    }
+}
